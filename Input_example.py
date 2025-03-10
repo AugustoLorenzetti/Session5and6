@@ -1,11 +1,7 @@
-name= input("What is your name?")
+name= input("What is your name? \n")
 print("hello", name)
-age = input("How old are you?")
-print("you were probably born in", 2024-int(age))
+age = int(input("How old are you? \n"))
+print("you were probably born in", 2024-(age))
 
-#syntax error example
-while bernardo goes home
 
-#correct code
-bernardo
 

@@ -1,14 +1,18 @@
-name= input("What is your name?")
-print("hello", name)
-age = input("How old are you?")
+name = input("What is your name? \n")
+print("Hello", name)
+age = input("How old are you? \n")
 
 try:
-    age= int(age)
-    new_age= age/0
+    age = int(age) # I am converting it to a number
+    # new_age = age / 0
 except ValueError:
-    print("you are trying to trick me")
-    print("better luck next time")
+    print("You are trying to trick me")
+    print("Better luck next time")
 except ZeroDivisionError:
-    print("you can't divide by zero")
+    print("You cannot divide by zero")
 except:
-    print("you can't divide by zero")
+    print("Something unexpected happened")
+else: # This happens if no error occurred
+    print("You were probably born in", 2024 - age)
+finally:
+    print("Thanks for playing")
